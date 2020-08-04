@@ -8,6 +8,4 @@ eureka:
     hostname: localhost
 
 
-permitPath:
-  - /demo/**
-  - /vc_msc/**
+permit-path: /demo/**, /vc_msc/**
