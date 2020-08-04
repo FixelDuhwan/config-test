@@ -6,3 +6,8 @@ eureka:
       defaultZone : http://admin:admin@localhost:8761/eureka/
   instance:
     hostname: localhost
+
+
+permitPath:
+  - /demo/**
+  - /vc_msc/**
