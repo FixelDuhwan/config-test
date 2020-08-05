@@ -59,4 +59,4 @@ eureka:
     hostname: localhost
 
 
-permit-path: /demo/**, /vc_msc/**, /actuator/**, /abc/**
+permit-path: /demo/**, /vc_msc/**, /actuator/**
