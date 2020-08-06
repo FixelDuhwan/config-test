@@ -23,6 +23,7 @@ spring:
           predicates:
             - Path=/api/**
           filters:
+            - CustomAuthFilter
             - name: CircuitBreaker
               args:
                 name: vc-api-fallback
