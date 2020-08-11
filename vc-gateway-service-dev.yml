@@ -23,7 +23,6 @@ spring:
           predicates:
             - Path=/api/**
           filters:
-            - CustomAuthFilter
             - name: CircuitBreaker
               args:
                 name: vc-api-fallback
@@ -60,4 +59,4 @@ eureka:
     hostname: localhost
 
 
-permit-path: /api/**, /demo/**, /vc_msc/**, /actuator/**
+permit-path: /demo/**, /vc_msc/**, /actuator/**
