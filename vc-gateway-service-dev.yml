@@ -32,7 +32,6 @@ spring:
           predicates:
             - Path=/demo/**
           filters:
-            - CustomAuthFilter
             - name: Hystrix
               args:
                 name: vc-api-fallback
@@ -59,4 +58,4 @@ eureka:
     hostname: localhost
 
 
-permit-path: /demo/**, /vc_msc/**, /actuator/**
+permit-path: /vc_msc/**, /actuator/**
