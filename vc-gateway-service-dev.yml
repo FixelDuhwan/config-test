@@ -32,6 +32,7 @@ spring:
           predicates:
             - Path=/demo/**
           filters:
+            - TokenRelay=
             - name: Hystrix
               args:
                 name: vc-api-fallback
