@@ -23,6 +23,7 @@ spring:
           predicates:
             - Path=/api/**
           filters:
+            - CustomAuthFilter
             - name: CircuitBreaker
               args:
                 name: vc-api-fallback
@@ -32,7 +33,7 @@ spring:
           predicates:
             - Path=/demo/**
           filters:
-            - TokenRelay=
+            - CustomAuthFilter
             - name: Hystrix
               args:
                 name: vc-api-fallback
@@ -57,6 +58,3 @@ eureka:
       defaultZone : http://admin:admin@localhost:8761/eureka/
   instance:
     hostname: localhost
-
-
-permit-path: /vc_msc/**, /actuator/**
